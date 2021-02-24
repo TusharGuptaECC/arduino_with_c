@@ -36,8 +36,8 @@ int main()
         q=n;
         while (q!=0)
         {
-            q = q/2;
             r = q%2;
+            q = q/2;
             if(r==1)
             {
                 PORTB |= _BV(PORTB3);  //datapin=1

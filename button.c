@@ -13,7 +13,7 @@ int main()
 
     PORTB &= ~_BV(PORTB5);  // setting pin 13 as low
     PORTB |= _BV(PORTB0);   // activating the pull-up resister
-    PINB |= ~_BV(PINB0);
+    //PINB |= ~_BV(PINB0);
     while(1)
     {
         x = _BV(PINB0);  // reading from the pin 8
@@ -25,7 +25,7 @@ int main()
         }
         else if(x==1)
         {
-            PORTB &= ~_BV(PORTB5);
+            PORTB &= ~_BV(PORTB5);	// setting pin 13 as low
             
         }
         else{}
